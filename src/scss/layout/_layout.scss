@@ -1,0 +1,48 @@
+html{
+    font-size:10px; 
+}
+
+body{
+    color:$fuscous-gray;
+    font-family:$museo-sans;
+    font-weight:300;
+    @include font-size(1.6);
+}
+
+a{
+    text-decoration:none;
+    color:$persian-green;
+}
+
+.display--block{    
+    display:block;
+}
+
+.container-center{
+    padding:0 0.83333333em;
+    @include box-sizing(border-box);
+    margin:0 auto;
+    
+}
+
+.img-responsive {
+    max-width: 100%;
+    height: auto;
+}
+
+img {
+    border: 1px solid $silver;
+}
+
+code {
+    font-family:$museo-sans;
+    font-weight:300;
+    @include font-size(1.6);  
+}
+
+main[role="main"]{
+    padding-top:180px;
+    padding-bottom:25px;
+    min-height:500px;
+    max-width:1080px;
+}

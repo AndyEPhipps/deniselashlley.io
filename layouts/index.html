@@ -1,0 +1,35 @@
+{{ partial "header.html" . }}
+
+<main role="main" class="container-center">
+	{{ with .Content }}
+	<section class="profile">
+		{{.}}
+	</section>
+	{{ end }}
+	<section class="skills">
+		<h2>{{ .Site.Data.skills.title }}</h2>
+		<p>{{ .Site.Data.skills.desc }}</p>
+		<ul class="skills__list">
+			{{ range .Site.Data.skills.keyskills  }}
+			<li class="skills__item">{{ .name }}</li>
+			{{ end }}
+		</ul>
+	</section>
+
+	<section id="project" class="project">
+		<h2>Projects</h2>
+		<ul class="project__list">
+			{{ range (where .Data.Pages "Section" "project") }}
+			<li class="project__item">
+				<a href="{{ .Permalink }}" class="project__link">
+					<img class="img-responsive" src="/assets/project/{{ .Params.imagePath }}.jpg" alt="" srcset="/assets/project/{{ .Params.imagePath }}.jpg, /assets/project/{{ .Params.imagePath }}@2x.jpg 2x" />
+					<h3 class="project__title">{{ .Title }}</h3>
+				</a>
+			</li>
+			{{ end }}
+		</ul>
+
+	</section>
+
+</main>
+{{ partial "footer.html" .}}

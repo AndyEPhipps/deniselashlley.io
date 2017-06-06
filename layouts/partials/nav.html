@@ -1,0 +1,10 @@
+<nav role="navigation" class="nav">
+  <button class="js-menu-btn nav__btn"><i class="icon icon-menu"></i></button>
+  <ul class="nav__list js-nav">
+    {{ range .Site.Menus.main }}
+    <li class="nav__item nav--{{ .Identifier }}">
+      <a href="{{ .URL }}">{{ .Name }}</a>
+    </li>
+    {{ end }}
+  </ul>
+</nav>

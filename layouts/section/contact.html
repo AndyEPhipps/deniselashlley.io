@@ -1,0 +1,42 @@
+{{ partial "header.html" .}}
+
+
+<main role="main" class="container-center">
+
+<header>
+	<h2 class="section__title">{{ .Title }}</h2>
+</header>
+    <div class="contact container-center">
+      <div class="col-cell">
+          <h3>Connect with me...</h3>
+          {{ partial "_social.html" .}}
+      </div>
+      <div class="col-cell">
+          <p>Happy to venture into new freelance projects or find out more about me, please send me a message...
+          <form action="https://formspree.io/your@email.com" method="POST" class="contact-form js-contact" novalidate>
+	         <div class="contact__row input--text">
+	          <label class="contact__title" for="name">name</label>
+	          <input type="text" name="name" id="name" placeholder="Your name" minlength="2" required/>
+	         </div>
+	         <div class="contact__row input--text">
+	          <label class="contact__title" for="email">e-mail address</label>
+	          <input type="text" name="email" id="email" placeholder="Your email address"  required />
+	         </div>
+	         <div class="contact__row input--textarea">
+	           <label class="contact__title" for="message">message</label>
+	           <textarea id="message" name="message" placeholder="Please enter a message" required ></textarea>
+	         </div>
+	         <div class="contact__row">
+	          <input class="submit__btn submit-btn-js" type="submit" value="Send">
+	         </div>
+	         </form>          
+          <div class="js-thankyou-message thankyou-message">
+         	<p class="success--message">Thanks, your messages has been sucessfully sent.</p>
+         </div>
+      </div>
+    </div>
+
+
+</main>
+
+{{ partial "footer.html" .}}

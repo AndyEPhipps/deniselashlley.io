@@ -1,0 +1,18 @@
+<footer class="footer" role="contentinfo">
+	
+	<div class="footer__bg">
+		<div class="footer__wrap">
+			<div class="footer__content">
+				<h3 class="footer__title">Connect with me...</h3>
+					{{ partial "_social.html" .}}
+			</div>
+		</div>
+		<p class="footer__copy-text">Copyright &copy; <span>{{ now.Format "2006" }}</span> Denise Lashlley.</p>	
+	</div>
+</footer>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.16.0/jquery.validate.min.js"></script>
+<script src="{{ "js/script.js" | absURL }}"></script>
+
+</body>
+</html>

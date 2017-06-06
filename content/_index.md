@@ -1,0 +1,1 @@
+I am freelance front end developer, based in leafy South London. As a web professional I have over eight years of industry experience. I specialise in producing high quality and standard coded websites.

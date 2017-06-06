@@ -1,0 +1,21 @@
+{{ partial "header.html" . }}
+
+<main role="main" class="container-center">
+
+<section class="project-details">
+	<h2 class="project-detail__title">{{ .Title }}</h2>
+	<div class="project-detail__image">
+		<img class="img-responsive" src="assets/project/{{ .Params.imagePath }}.jpg" alt="" srcset="/assets/project/{{ .Params.imagePath }}.jpg, /assets/project/{{ .Params.imagePath }}@2x.jpg 2x" />
+	</div>
+	<div class="project-detail__summary">
+		
+		<div>{{ .Content }}</div>
+		<p>{{ .Params.keySkills }}</p>
+		{{ if .Params.siteUrl }}
+		<p>Visit website: <a href="{{ .Params.siteUrl }}">{{ .Params.siteUrl }}</a></p>
+		{{ end }}
+	</div>
+</section>
+
+</main>
+{{ partial "footer.html" .}}

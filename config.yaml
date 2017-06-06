@@ -1,0 +1,30 @@
+baseURL:            "http://deniselashlley.io/"
+languageCode:       "en-GB"
+canonifyURLs:       true
+watch:              true
+
+params:
+  title:            "Denise Lashlley"
+  subtitle:         "Front end developer"
+  metakeywords:     denise lashlley, deniselashlley, front end developer, user interface developer, UI developer
+  metadescription:  Front end developer based in South London, specialising in creating web standard websites
+  email:            mail@deniselashlley.io
+  github:           https://github.com/deniselashlley
+  twitter:          http://twitter.com/lashlled
+  linkedin:         http://uk.linkedin.com/in/deniselashlley/
+  instagram:        https://www.instagram.com/lashlled/
+
+  # Site fonts
+  typekitfont:     https://use.typekit.net/tfi6ope.js
+
+menu:
+  main:
+    - Name: "projects"
+      Identifier: "projects"
+      URL: "/#project"
+      weight: 2
+    - Name: "contact"
+      Identifier: "contact"
+      URL: "/contact/"
+      weight: 3
+
